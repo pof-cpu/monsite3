@@ -132,13 +132,18 @@ justify: le texte sera « justifié ». Justifier le texte permet de faire en s
 	font-family: 'inkfree';
 	src: url('inkfree.ttf');
 } 
+@font-face{
+    font-family: 'indie';
+    src : url('IndieFlower-Regular.ttf');
+}
+
 
 h1
 {
 	/* font-size: large; */
 	
 	font-size: 200%;
-	font-family: 'inkfree','Times New Roman', Times, serif;	
+	font-family: 'inkfree', 'indie';
 	text-align: left;
 	}
 	
