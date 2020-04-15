@@ -167,7 +167,13 @@ p
 	top: +5ex;
     margin: 0 2px;
 }
-
+.ch{
+     
+    font-style: italic;
+}
+.f1 {
+    font-style: normal;  
+}
 
 .dblarrow {
     font-size: 125%;
