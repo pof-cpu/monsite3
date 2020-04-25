@@ -1,0 +1,54 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap'); */
+@font-face{
+    font-family: 'Bangers';
+    src:url('Bangers-Regular.ttf')
+}
+.flex-container{
+font-family: 'Bangers';
+display: flex;
+background-color: #5c5c5c;
+width:100%;
+justify-content: flex-start;
+
+}
+.flex-container > ul{
+    
+    margin: 100px;
+    padding: 20px 90px;
+    justify-content: flex-start;
+    
+} 
+.flex-container > li{
+    /* background-color: #acacac;
+    font-size: 20px; */
+    text-decoration: none; 
+    color:black;
+    justify-content: flex-start;
+}
+.flex-container > a{
+    background-color: #acacac;
+    font-size: 20px;
+    text-decoration: none; 
+    color:black;
+    justify-content: flex-start;
+
+a.lien_menu{
+    text-decoration: none;
+     
+}
+
+
+
+/*
+ul.menu{
+
+
+     list-style-type: none;
+    display:flex;
+    flex-wrap: nowrap;
+    width:50px;
+    align-content: space-between;
+    margin:5px 0;
+    padding:auto 20px; /*hauteur largeur
+    background-color:rgb(82, 82, 82);  */
+}
