@@ -1,9 +1,14 @@
+@font-face{
+    font-family:'Bangers';
+    src:url('Bangers-Regular.ttf')
+}
 
 #navigation{
     width: 200px;
     list-style:none;
     margin:0;
     padding:0;
+
 }
 #navigation li{
     background-color: slategrey;
@@ -12,11 +17,41 @@
 }
 #navigation li a {
     display:block;
-    background: rgb(39, 72, 92);
-    color: gray;
-    font: 1em "Trebuchet";
+    background: rgb(0, 50, 90);
+    color: white;
+    font: 1em "Bangers";
     line-height: 1em;
     text-align: center;
     text-decoration: none;
     padding:4px 0;
 }
+
+#navigation li a:hover, #navigation li a:focus, #navigation li a:active{
+    background: chocolate;
+    text-decoration: underline;
+    transition-duration: .3s;
+}
+
+#navigationh li {
+    display: inline;
+    margin-right: 1px;
+   
+    background: rgb(0, 50, 90);
+    
+}
+#navigationh li a {
+    padding: 4px 20px;
+    background: rgb(0, 50, 90);
+    font: 1em "Bangers";
+    line-height: 1em ;
+    text-align: center ;
+    text-decoration: none ; 
+    color : white;
+    color:white;
+   
+   
+}
+#navigationh li a:hover, #navigationh li a:focus, #navigationh li a:active {
+    background: chocolate;
+    text-decoration: underline ;
+  }
