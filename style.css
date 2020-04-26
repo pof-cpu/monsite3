@@ -1,35 +1,22 @@
-@font-face{
-    font-family: 'Bangers';
-    src:url('Bangers-Regular.ttf')
+
+#navigation{
+    width: 200px;
+    list-style:none;
+    margin:0;
+    padding:0;
 }
-
-.flex-container {
-    display: flex;
-    /* background-color: #f1f1f1; */
-    background-color: DodgerBlue;
-    width:100%;
-
-  }
-  
-  .flex-container > div {
-    background-color:rgb(184, 184, 184);
-    margin: 10px;
-    padding: 0 20px;
-    font-family: 'Bangers';
-    color: black
-    /* font-size: 20px; */
-  }
-
-  .flex-container > li {
-    background-color:rgb(184, 184, 184);
-    margin: 10px;
-    padding: 0 20px;
-    font-family: 'Bangers';
-    list-style-type: none;
-    /* font-size: 20px; */
-  }
-
-  a.menu-nav {
-      text-decoration: none;
-      color:black;
-  }
+#navigation li{
+    background-color: slategrey;
+    color:#fff;
+    
+}
+#navigation li a {
+    display:block;
+    background: rgb(39, 72, 92);
+    color: gray;
+    font: 1em "Trebuchet";
+    line-height: 1em;
+    text-align: center;
+    text-decoration: none;
+    padding:4px 0;
+}
