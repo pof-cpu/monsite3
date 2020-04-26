@@ -62,3 +62,33 @@
     text-decoration: underline ;
     transition-duration: .3s;
   }
+
+  #navigationhf{
+      margin:0;
+      padding:0;
+      list-style: none;
+     
+  }
+  #navigationhf li{
+        float: left ;
+        width: 150px ;
+        border: 1px solid #600 ;
+        margin-right: 1px ;
+        color: #fff ;
+        background: #c00 ;
+        
+  }
+  #navigationhf li a {
+        display: block ;
+        background: #c00 ;
+        color: #fff ;
+        font: 1em "Bangers";
+        line-height: 1em ;
+        padding: 4px 0 ;
+        text-align: center ;
+        text-decoration: none;
+  }
+  #navigationhf li a:hover, #navigationhf li a:focus, #navigationhf li a:active {
+    background: #900 ;
+    transition-duration: .3s;
+  }
