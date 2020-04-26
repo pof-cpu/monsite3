@@ -32,6 +32,12 @@
     transition-duration: .3s;
 }
 
+#navigationh{
+    margin:0 2;
+    padding:0;
+    list-style:none;
+    text-align: left;
+}
 #navigationh li {
     display: inline;
     margin-right: 1px;
@@ -54,4 +60,5 @@
 #navigationh li a:hover, #navigationh li a:focus, #navigationh li a:active {
     background: chocolate;
     text-decoration: underline ;
+    transition-duration: .3s;
   }
