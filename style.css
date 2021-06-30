@@ -1,11 +1,16 @@
+body{
+    margin : 0;
+    padding: 0;
+}
+
 
 @media screen and (max-width:1200px) {
     .doc {   
         flex-direction: column;  
-        display: flex;
+        /* display: flex;
         flex-wrap:wrap;
         justify-content: space-between;
-        align-content: stretch;   
+        align-content: stretch;    */
         
     }
 }
@@ -18,22 +23,55 @@
     flex-wrap:wrap;
     justify-content: space-between;
     align-content: stretch;   
+    border:solid;
+    border-color: slateblue;
 }
 /* box */
 .gauche{
     flex : 1;
+    border:solid;
+    border-color: seagreen;
+    margin:10px;
 }
 .milieu{
     flex : 1.2;
     border : solid;
+    border-color: sandybrown;
+    margin:10px;
 }
 .droite{
     flex :1;
-    
+    border : solid;
+    border-color: saddlebrown;
+    margin:10px;
 }
 .en-tete{
     display: flex;
-   flex-wrap:wrap;
+    flex-wrap:wrap;
     justify-content: space-between;
     align-content: stretch; 
+    border: solid;
+    border-color: salmon;
+}
+
+.en-tete-gauche{
+    flex:1;
+}
+.en-tete-milieu{
+    flex:1;
+    text-align: center;
+}
+.en-tete-droit{
+    flex:1;
+   text-align: right;
+}
+
+/* ************************************ */
+/* MISE EN PAGE */
+/* ************************************ */
+
+.attendus{
+    font-family: 'Caveat', cursive;
+    font-size: 0.95em;
+    margin:15px;
 }
