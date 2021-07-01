@@ -73,7 +73,11 @@ body{
 /* ************************************ */
 /* MISE EN PAGE */
 /* ************************************ */
-
+a.figure{
+    float:left;
+    margin:0;
+    padding: 0;
+}
 .attendus{
     font-family: 'Caveat', cursive;
     font-size: 0.95em;
@@ -82,16 +86,29 @@ body{
     margin-bottom: 0.25em;
     column-count:2;
 }    
+p.normal{
+    margin : 0 0 6pt 0em;
+    /* text-indent: 5mm; */
+}
+p.sans{
+    margin :0;
+}
 
-
-.protocole{
+div.protocole{
     column-count: 2;
-    margin-left: 1em;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+    margin : 0 0 6pt 1em;
     column-count:2;
     font-size:9pt;
 
+}
+div.question{
+    margin: 3pt 0 3pt 1.5em;
+}
+ol.question{
+    margin: 3pt 0 3pt 0em;
+}
+li.question{
+    margin-bottom: 3pt;
 }
 
 /* ************************************* */
@@ -101,20 +118,21 @@ body{
 h1.titre{
     margin:0;
     text-align: center;
-     font-size: 14px;
+     /* font-size: 16px; */
      border: 0.5px solid;
 }
   h2{
-    font-size: 1.2em;
+    /* font-size: 1.2em; */
     margin-bottom: 3px;
   }
   
-  h3{
-    font-size: 1em;
+  h4.protocole{
+    /* font-size: 1em; */
+    margin : 3pt 0 0 1em;
   }
   
   h4{
-    font-size: .96em;
+    /* font-size: .96em; */
   }
 
 
