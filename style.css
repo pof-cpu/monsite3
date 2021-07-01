@@ -14,6 +14,10 @@ body{
         
     }
 }
+
+
+
+
 /* ************************ */
 /* FLEXBOX */
 /* ************************ */
@@ -72,6 +76,80 @@ body{
 
 .attendus{
     font-family: 'Caveat', cursive;
-    font-size: 0.95em;
-    margin:15px;
+    /* font-size: 0.95em; */
+    margin-left: 1em;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+    column-count:2;
+}    
+
+
+.protocole{
+    column-count: 2;
+    margin-left: 1em;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+    column-count:2;
+
+}
+
+/* ************************************* */
+/* Titres  */
+/* ************************************* */
+
+h1.titre{
+    margin:0;
+    text-align: center;
+     font-size: 14px;
+     border: 0.5px solid;
+}
+  h2{
+    font-size: 1.2em;
+    margin-bottom: 3px;
+  }
+  
+  h3{
+    font-size: 1em;
+  }
+  
+  h4{
+    font-size: .96em;
+  }
+
+
+
+@media print {
+
+  
+      header, footer, aside, nav, form, iframe, .menu, .hero, .adslot {
+          display: none;
+        }
+  
+    body{
+        width: 100%;
+        }  
+    .doc {   
+        flex-direction: column;
+        
+        }
+  
+    .milieu {
+        flex:1.2; 
+        /* margin-left:1.5cm;
+        margin-right:1.5cm; */
+        border:none;
+        font-size: 10px;
+        }
+    .gauche, .droite{
+        display:none;
+    }
+    a[href]{
+        font-style: italic;
+        text-decoration: none;
+        color:black;
+    } 
+    a.lien{
+        display:none;  
+    }
+          
 }
