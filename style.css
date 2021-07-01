@@ -1,19 +1,15 @@
+/* ************* 
+* 30 juin 2021 *
+**************** */
+
+
 body{
     margin : 0;
     padding: 0;
 }
 
 
-@media screen and (max-width:1200px) {
-    .doc {   
-        flex-direction: column;  
-        /* display: flex;
-        flex-wrap:wrap;
-        justify-content: space-between;
-        align-content: stretch;    */
-        
-    }
-}
+
 
 
 
@@ -21,7 +17,8 @@ body{
 /* ************************ */
 /* FLEXBOX */
 /* ************************ */
-/* Container */
+/* Container document */
+/* ------------------------------ */
 .doc{ 
     display: flex;
     flex-wrap:wrap;
@@ -49,6 +46,8 @@ body{
     border-color: saddlebrown;
     margin:10px;
 }
+/* Container entete */
+/* ------------------------- */
 .en-tete{
     display: flex;
     flex-wrap:wrap;
@@ -60,6 +59,7 @@ body{
 
 .en-tete-gauche{
     flex:1;
+    font-size: 8pt;
 }
 .en-tete-milieu{
     flex:1;
@@ -68,6 +68,7 @@ body{
 .en-tete-droit{
     flex:1;
    text-align: right;
+   font-size: 8pt;
 }
 
 /* ************************************ */
@@ -85,20 +86,30 @@ a.figure{
     margin-top: 0.25em;
     margin-bottom: 0.25em;
     column-count:2;
-}    
-p.normal{
+} 
+
+.encolonne{
+   
+    
+}
+
+.normal{
     margin : 0 0 6pt 0em;
+    font-size: 11pt;
     /* text-indent: 5mm; */
 }
 p.sans{
     margin :0;
+    font-size: 11pt;
 }
+ 
 
 div.protocole{
     column-count: 2;
     margin : 0 0 6pt 1em;
     column-count:2;
-    font-size:9pt;
+    font-size:10pt;
+
 
 }
 div.question{
@@ -106,9 +117,11 @@ div.question{
 }
 ol.question{
     margin: 3pt 0 3pt 0em;
+    font-size: 11pt;
 }
 li.question{
     margin-bottom: 3pt;
+    font-size: 11pt;
 }
 
 /* ************************************* */
@@ -118,24 +131,44 @@ li.question{
 h1.titre{
     margin:0;
     text-align: center;
-     /* font-size: 16px; */
+     font-size: 18px;
      border: 0.5px solid;
 }
   h2{
-    /* font-size: 1.2em; */
+    font-size: 14pt;
     margin-bottom: 3px;
   }
-  
+  h3{
+      font-size: 11pt;
+      margin-bottom: 3px;
+  }
   h4.protocole{
-    /* font-size: 1em; */
+    font-size: 10pt;
     margin : 3pt 0 0 1em;
+  }
+  h4.exercice{
+    font-size: 11pt;
+    margin : 3pt 0 0 0;
+    background-color: #EAF1DD;
   }
   
   h4{
     /* font-size: .96em; */
   }
 
-
+  @media screen and (max-width:1200px) {
+    .doc {   
+        flex-direction: column;  
+        /* display: flex;
+        flex-wrap:wrap;
+        justify-content: space-between;
+        align-content: stretch;    */
+        
+    }
+    .encolonne{
+        columns: count 1;
+    }
+}
 
 @media print {
 
@@ -151,6 +184,12 @@ h1.titre{
         flex-direction: column;
         
         }
+    .encolonne{
+        padding: 10pt;
+        column-fill: auto;
+        column-count: 2;
+        column-rule: .25pt solid rgb(75, 70, 74);
+    }
   
     .milieu {
         flex:1.2; 
