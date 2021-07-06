@@ -24,26 +24,26 @@ body{
     flex-wrap:wrap;
     justify-content: space-between;
     align-content: stretch;   
-    /* border:solid; */
-    /* border-color: slateblue; */
+    border:solid;
+    border-color: slateblue;
 }
 /* box */
 .gauche{
     flex : 1;
-    /* border:solid; */
-    /* border-color: seagreen; */
+    border:solid;
+    border-color: seagreen;
     margin:10px;
 }
 .milieu{
     flex : 1.2;
-    /* border : solid; */
-    /* border-color: sandybrown; */
+    border : solid;
+    border-color: sandybrown;
     margin:10px;
 }
 .droite{
     flex :1;
-    /* border : solid; */
-    /* border-color: saddlebrown; */
+    border : solid;
+    border-color: saddlebrown;
     margin:10px;
 }
 /* Container entete */
@@ -53,8 +53,8 @@ body{
     flex-wrap:wrap;
     justify-content: space-between;
     align-content: stretch; 
-    /* border: solid; */
-    /* border-color: salmon; */
+    border: solid;
+    border-color: salmon;
 }
 
 .en-tete-gauche{
@@ -100,7 +100,7 @@ a.figure{
 
 .normal{
     margin : 0 0 6pt 0em;
-    /* font-size: 10pt; */
+    font-size: 10pt;
     /* text-indent: 5mm; */
 }
 p.sans{
@@ -113,7 +113,7 @@ div.protocole{
     column-count: 2;
     margin : 0 0 6pt 1em;
     column-count:2;
-    /* font-size:10pt; */
+    font-size:10pt;
 
 
 }
@@ -122,11 +122,11 @@ div.question{
 }
 ol.question{
     margin: 3pt 0 3pt 0em;
-    /* font-size: 11pt; */
+    font-size: 11pt;
 }
 li.question{
     margin-bottom: 3pt;
-    /* font-size: 11pt; */
+    font-size: 11pt;
 }
 
 /* ************************************* */
@@ -136,11 +136,11 @@ li.question{
 h1.titre{
     margin:0;
     text-align: center;
-     /* font-size: 18px; */
+     font-size: 18px;
      border: 0.5px solid;
 }
   h2{
-    /* font-size: 14pt; */
+    font-size: 14pt;
     margin-bottom: 3px;
   }
   h3{
@@ -148,11 +148,11 @@ h1.titre{
       margin-bottom: 3px;
   }
   h4.protocole{
-    /* font-size: 10pt; */
+    font-size: 10pt;
     margin : 3pt 0 0 1em;
   }
   h4.exercice{
-    /* font-size: 11pt; */
+    font-size: 11pt;
     margin : 3pt 0 0 0;
     background-color: #EAF1DD;
   }
@@ -184,7 +184,6 @@ h1.titre{
   
     body{
         width: 100%;
-        font-size: 11pt;
         }  
     .doc {   
         flex-direction: column;
@@ -195,7 +194,6 @@ h1.titre{
         column-fill: auto;
         column-count: 2;
         column-rule: .25pt solid rgb(75, 70, 74);
-        height:24.8cm;
     }
   
     .milieu {
