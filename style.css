@@ -128,6 +128,24 @@ li.question{
     margin-bottom: 3pt;
     /* font-size: 11pt; */
 }
+/* ************************************* */
+/* Couleur de la police */
+/* ************************************* */
+.red{
+    color: red;
+}.blue{
+    color: blue;
+}
+.green{
+    color: green;
+}
+.black{
+    color: black;
+}
+.gras{
+    font-weight: bold;
+    
+}
 
 /* ************************************* */
 /* Titres  */

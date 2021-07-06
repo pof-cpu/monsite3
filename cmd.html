@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" media="screen" href="../prism-default.css" />
+    <link rel="stylesheet" media="screen" href="../prism.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
     
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="../prism.js"></script>
+    <script src="prism.js"></script>
     <script type="text/javascript">
         // Optional
         Prism.plugins.NormalizeWhitespace.setDefaults({
@@ -27,31 +27,12 @@
         </script>
 
 
-    <title>MonSite</title>
+    <title>cmd</title>
 </head>
 <body>
-    <div class="doc">
+    <div class="div doc">
         <div class="gauche">
-            <!-- <h1 class="titre">Partie de gauche</h1> -->
-            <div class="normal">
-                <hr>
-                <p class="normal">
-                    Utilisation de prism :
-                    <a href="prism.html" target="_blank";>Prism</a>
-                </p>
-                <p class="normal">
-                   Invite de commande (dos) :
-                    <a href="cmd.html" target="_blank";>cmd</a>
-                </p>
-                <p class="normal">
-                    Exemple de page :
-                    <a href="Exemple.html" target="_blank";>Exemple</a>
-                </p>
-                <p class="normal">
-                    2ème Exemple de page :
-                    <a href="Exemple2.html" target="_blank";>Exemple2</a>
-                </p>
-            </div>
+            <!-- <h1 class="titre"></h1> -->
         </div>
         <div class="milieu">
             <div class="en-tete">
@@ -66,19 +47,29 @@
             </div>
 
             </div>
-            <h1 class="titre">Bienvenue sur mon site</h1>
-            <!-- <div > <div class="encolonne"> pour mettre sur deux colonnes  -->
-
+            <h1 class="titre">Invite de commande windows</h1>
+            <div > <!-- <div class="encolonne"> pour mettre sur deux colonnes--> 
+                <p class="normal">
+                    La commande <code class="blue gras">dir</code> : Lister (fichiers, dossiers). 
+                    <ul class="normal">
+                        <li><code class="blue">dir /s</code> affiche les sous-dossiers du dossier courant <br></li>
+                        <li><code class="blue">dir /h</code> affiche les dossiers cachés <br></li>
+                        <li><code class="blue">dir mon_dossier<b>&gt</b>fichier.txt</code> permet d'enregistrer la liste du répertoire <code>mon_dossier</code> dans le fichier texte <code>fichier.txt</code></li>
+                        dans le fichier texte <code>fichier.txt</code>        
+                        <li><code class="blue">dir <span class="black">mon_dossier</span>\<span class="red">*</span>.doc</code> : permet d'afficher tous les fichiers <code class="blue">.doc</code> present dans le dossier <code>mon-dossier</code></li>
+                    </ul>
+                
+                </p>
             
-           
-         
-          
-           
-           
-           
-           
+            <!-- <p class="normal">
+                Pour en savoir plus : 
+                <a href="https://prismjs.com/index.html">prismjs.com</a>
+            </p> -->
+            <p class="normal">
+               
+            </div>
         </div>
-    
+        
         <div class="droite">
             <!-- <h1 class="titre">partie droite</h1> -->
         </div>
