@@ -50,15 +50,69 @@
             <h1 class="titre">Invite de commande windows</h1>
             <div > <!-- <div class="encolonne"> pour mettre sur deux colonnes--> 
                 <p class="normal">
-                    La commande <code class="blue gras">dir</code> : Lister (fichiers, dossiers). 
+                    La commande <code class="blue gras">dir</code> : Permet de lister (fichiers, dossiers). 
                     <ul class="normal">
                         <li><code class="blue">dir /s</code> affiche les sous-dossiers du dossier courant <br></li>
                         <li><code class="blue">dir /h</code> affiche les dossiers cachés <br></li>
+                        <li><code class="blue">dir /b</code> affiche uniquement les fichiers <br></li>
                         <li><code class="blue">dir mon_dossier<b>&gt</b>fichier.txt</code> permet d'enregistrer la liste du répertoire <code>mon_dossier</code> dans le fichier texte <code>fichier.txt</code></li>
                         dans le fichier texte <code>fichier.txt</code>        
-                        <li><code class="blue">dir <span class="black">mon_dossier</span>\<span class="red">*</span>.doc</code> : permet d'afficher tous les fichiers <code class="blue">.doc</code> present dans le dossier <code>mon-dossier</code></li>
+                        <li><code class="blue">dir <span class="black">mon_dossier</span>\<span class="red">*</span>.doc</code> : permet d'afficher tous les fichiers <code class="blue">.doc</code> present dans le dossier <code>mon_dossier</code></li>
                     </ul>
-                
+                </p>
+                <hr>
+                <p class="normal">
+                    La commande <code class="blue gras">ren</code> : Permet de renommer un fichier.
+                    <ul class="normal">
+                        <li><code class="blue">ren</code> <code class="normal">fichier1 fichier 2</code> : Renomme le fichier 1 en fichier 2</li>
+                        <li><code class="blue">ren <span class="red">*</span>.txt <span class="red">*</span>.doc </code> : Permet de renommer tous les fichier <code class="blue">.txt</code> en fichier <code class="blue">.doc</code></li>
+                    </ul>
+                </p>
+                <hr>
+                <p class="normal">
+                    La commande <code class="blue gras"> move</code> : Permet de déplacer des fichiers
+                    <ul class="normal">
+                        <li><code class="blue">move /-y dossier1\*.doc dossier2\</code> Permet de déplacer tous les fichiers .doc du dossier 1 vers le dossier 2</li>
+                        <li><code class="blue">/-y</code> : permet d'empêcher les écrasements.</li>
+                        <li><code class="blue">/y</code> : permet de ne pas demander la confirmation d'écrasement</li>
+                    </ul>
+                </p>
+                <hr>
+                <p class="normal">La commande <code class="blue gras">cd</code> : Permet de changer de dossier <br>
+                <code class="blue gras">cd</code> : Affiche le nom ou change le répertoire en cours.<br>
+
+<code class="blue gras">CHDIR [/D] [lecteur:][chemin]</code><br>
+<code class="blue gras">CHDIR [..]</code><br>
+<code class="blue gras">CD [/D] [lecteur:][chemin]</code><br>
+<code class="blue gras">CD [..]</code><br>
+
+  <code class="blue gras">..</code>   Signifie que vous voulez vous placer sur le répertoire parent.<br>
+
+Entrez CD lecteur: pour afficher le répertoire en cours sur le lecteur.<br>
+Entrez CD sans paramètres pour afficher le lecteur et le répertoire en cours.<br>
+
+Utilisez le commutateur /D pour modifier le lecteur actuel en plus de la
+modification du répertoire actuel pour un lecteur.<br>
+
+Si les extensions de commandes sont activées, la commande CHDIR change comme
+suit :<br>
+
+La chaîne du répertoire en cours est convertie pour utiliser la même casse que
+celle du disque. Donc, CD C:\TEMP fixera en fait le répertoire en cours à
+C:\Temp si c'est la casse utilisée sur le disque.<br>
+
+La commande CHDIR ne traite pas les espaces comme des séparateurs ;
+il est donc possible d'utiliser CD pour aller dans un sous-répertoire dont le
+nom contient des espaces sans entourer ce nom de guillemets. Par exemple :<br>
+
+    cd \winnt\profiles\NomUtilisateur\programmes\menu démarrer <br>
+
+est identique à :<br>
+
+    cd "\winnt\profiles\NomUtilisateur\programmes\menu démarrer"<br>
+
+qui est ce que vous devez entrer si les extensions sont désactivées.<br>
+
                 </p>
             
             <!-- <p class="normal">
